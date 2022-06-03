@@ -55,7 +55,7 @@ function clickBtn(e) {
       dsp.value = dsp.value + ".";
       break;
     case "resultButton":
-      dsp.value = result(dsp.value.toString());
+      dsp.value = result(dsp.value);
       break;
   }
 }
@@ -118,28 +118,24 @@ function result(op) {
   switch (operator) {
     case "+":
       return addition(num1, num2);
-      break;
     case "-":
       return substraction(num1, num2);
-      break;
     case "/":
       return division(num1, num2);
-      break;
     case "*":
       return multiplication(num1, num2);
-      break;
   }
 }
 
 function addition(n1, n2) {
   return n1 + n2;
 }
-function substraction() {
+function substraction(n1, n2) {
   return n1 - n2;
 }
-function division() {
+function division(n1, n2) {
   return n1 / n2;
 }
-function multiplication() {
+function multiplication(n1, n2) {
   return n1 * n2;
 }
