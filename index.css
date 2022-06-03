@@ -1,0 +1,40 @@
+.grid-container{
+    display: grid;
+}
+#mainContainer{
+    background: darkgreen;
+    justify-content: center;
+    grid-template-columns: auto;
+}
+
+#calculator{
+    background-color: darkgrey;
+    grid-template-columns: auto;
+    width: 225;
+    border: black;
+    padding: 5px;
+}
+
+#displayContainer{
+    background: blue;
+    width: 200;
+    height: 50px;
+    padding: 5px;
+}
+
+#display{
+    background: black;
+    color: green;
+    text-align: right;
+}
+
+#buttonsContainer{
+    background-color: coral;
+    grid-template-columns: auto auto auto auto;
+    padding: 5px;
+}
+
+.btn{
+    height: 50px;
+    width: 50px;
+}
